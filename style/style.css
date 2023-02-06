@@ -1,0 +1,106 @@
+/* Raiz */
+:root {
+    --color-principal: rgb(249, 247, 247);
+    --color-secundario: rgb(145, 236, 76);
+    --color-enlaces: rgb(0, 247, 247);
+    --color-sombra: rgb(0, 0, 0);
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../image/1.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+    color: var(--color-principal);
+    text-shadow: 1px 1px 5px var(--color-sombra);
+}
+h3 {
+    margin-bottom: .3rem;
+    font-size: 1.05rem;
+    color: var(--color-secundario);
+    text-align: center;
+    text-shadow: 1px 1px 5px var(--color-sombra);
+}
+ul {
+    list-style: none;
+    color: var(--color-principal);
+    text-align: center;
+    text-shadow: 1px 1px 5px var(--color-sombra);
+}
+a {
+    color: var(--color-enlaces);
+    text-decoration: none;
+}
+
+/* Estilos especificos */
+.header__title {
+    width: fit-content;
+    margin: .5rem auto;
+}
+.menu {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(212, 138, 138, 0.5);
+    border-radius: 5px;
+}
+.row {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.row1 {
+    margin-bottom: 5px;
+}
+.col {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 2px;
+}
+.day-mobile {
+    display: none;
+}
+
+/* Media query */
+@media screen and (max-width: 750px) {
+    .row {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: rgba(200, 200, 200, .05);
+        border-radius: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    } 
+    .row1 {
+        display: none;
+    }
+    .day-mobile {
+        display: block;
+    }
+    .col {
+        padding: 10px;
+    }
+    .col7 {
+        grid-column: 2 / 3;
+    }
+}
+@media screen and (max-width: 500px) {
+    .row {
+        grid-template-columns: 1fr;
+    } 
+    .col7 {
+        grid-column: auto;
+    }
+}
+
