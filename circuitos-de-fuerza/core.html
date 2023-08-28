@@ -8,46 +8,371 @@
     <!-- Titulo -->
     <title>Entrenamientos</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../style/circuitos-de-fuerza.css" />
+    <link rel="stylesheet" href="../style/core.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <table>
-        <tr>
-            <th colspan="2">Trabajo de core</th>
-        </tr>
-        <tr>
-            <th>Ejecicio</th>
-            <th>Repeticiones</th>
-        </tr>
-        <tr>
-            <td><a href="https://www.objetivobienestar.com/uploads/s1/28/39/01/Ejercicios-para-abdominales-abdominales-sostenidos.jpg" target="_blank">Abdominales bolita</a></td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td><a href="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/08/13/15656840821169.jpg" target="_blank">Extensión de cadera</a></td>
-            <td>30"</td>
-        </tr>
-        <tr>
-            <td><a href="https://www.sportlife.es/uploads/static/sportlife/upload/images/gallery/5c1a9d340de6947f023493dd/5c1a9e400de69414023495ed-rutina-de-abdominales-oblicuos-para-hacer-en-casa.jpg" target="_blank">Oblicuos</a></td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Plancha boca abajo</td>
-            <td>30"</td>
-        </tr>
-        <tr>
-            <td>Espinales alternos</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Abodimnales inferiores</td>
-            <td>8</td>
-        </tr>
-    </table>
-    <footer>
-        <h3><a href="../index.html">Volver</a></h3>
-    </footer>
+    <!-- Button trigger modal -->
+    <div class="btn-modal">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Circuito
+      </button>
+      <a href="../index.html">
+        <button type="button" class="btn btn-primary">Volver</button>
+      </a>
+    </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Circuito de Fuerza
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th colspan="2">Trabajo de core</th>
+              </tr>
+              <tr>
+                <th>Ejecicio</th>
+                <th>Repeticiones</th>
+              </tr>
+              <tr>
+                <td>1. Crunch inverso</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>2. Plancha con la pierna levantada</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>3. Tijeras</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>4. Lastrado</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>5. El cien</td>
+                <td>100 segundos</td>
+              </tr>
+              <tr>
+                <td>6. Elevación inferior</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>7. Teaser</td>
+                <td>20 (10 por lado)</td>
+              </tr>
+              <tr>
+                <td>8. Plancha lateral</td>
+                <td>30"</td>
+              </tr>              
+              <tr>
+                <td>9. Plancha</td>
+                <td>30"</td>
+              </tr>
+              <tr>
+                <td>10. Espinales alternos.</td>
+                <td>16 (8 por lado)</td>
+              </tr>
+              <tr>
+                <th colspan="2">Repite 3 veces</th>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide position-relative"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+
+        <!-- Ejercicios -->
+        <div class="carousel-item active">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Strength/S_014-B2.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">1. Crunch inverso</h5>
+              <ol>
+                <li>Paso 1 Túmbate sobre la espalda con las rodillas juntas y las
+                  piernas flexionadas formando un ángulo de 90 grados y las
+                  plantas de los pies apoyadas en el suelo. Coloca las palmas de
+                  las manos hacia el suelo para apoyarte.</li>
+                <li>Paso 2 Contrae los abdominales para levantar las caderas del
+                  suelo mientras encoges las rodillas hacia el pecho. Haz una
+                  pausa arriba y vuelve a bajar sin dejar que la parte baja de la
+                  espalda se arquee y pierda contacto con el suelo.</li>
+              </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Pilates/P_063-C1.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">2. Plancha con la pierna levantada</h5>
+                <ol>
+                  <li>Comienza en posición de plancha.</li>
+                  <li>Eleva la pierna derecha y luego bájala al suelo.</li>
+                  <li>Eleva la pierna izquierda y luego bájala al suelo.</li>
+                  <li>Tira de la rodilla derecha hacia el pecho.</li>
+                  <li>Vuelve a llevar la pierna derecha junto a la izquierda.</li>
+                  <li>Tira de la rodilla izquierda hacia el pecho.</li>
+                  <li>Vuelve a llevar la pierna izquierda junto a la derecha.</li>
+                  <li>Tira de la rodilla derecha hacia el codo izquierdo.</li>
+                  <li>Vuelve a llevar la pierna derecha junto a la izquierda.</li>
+                  <li>Tira de la pierna izquierda hacia el codo derecho.</li>
+                  <li>Vuelve a llevar la pierna izquierda junto a la derecha.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Pilates/P_081-D1.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">3. Tijeras</h5>
+              <ol>
+                <li>Túmbate boca arriba con la pelvis estable y ligeramente inclinada y las piernas flexionadas a 90 grados.</li>
+                <li>Enrolla el cuello y los hombros para levantarlos de la esterilla mientras estiras las piernas hacia el techo.</li>
+                <li>Sujeta una pierna mientras bajas la otra.</li>
+                <li>Sujeta el otro muslo mientras bajas la pierna contraria hacia el suelo.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Pilates/P_070-C4.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">4. Lastrado</h5>
+                <ol>
+                  <li>Ponte de pie con los brazos por encima de la cabeza.</li>
+                  <li>Trata de tocar el suelo y mantén la postura.</li>
+                  <li>Enrolla lentamente el tronco bajando hacia el suelo, curvando la espalda. Exhala por la boca durante el movimiento.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Pilates/P_106-B1.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">5. El cien</h5>
+                <ol>
+                  <li>Túmbate boca arriba con la pelvis en posición neutra y los brazos apoyados a los costados.</li>
+                  <li>Levanta una pierna cada vez flexionando las rodillas, en la postura de la mesa.</li>
+                  <li>Levanta la cabeza y los hombros de la esterilla.</li>
+                  <li>Estira las piernas, manteniendo los talones juntos.</li>
+                  <li>Levanta los brazos e inhala durante 5 segundos, luego exhala durante otros 5 segundos. Repite 10 veces.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Pilates/P_047-B1.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">6. Elevación inferior</h5>
+                <ol>
+                  <li>Túmbate boca arriba con la pelvis estable y ligeramente inclinada, y pon las manos en la nuca.</li>
+                  <li>Enrolla el cuello y los hombros para levantarlos de la esterilla mientras estiras las piernas hacia el techo.</li>
+                  <li>Inhala mientras bajas las piernas.</li>
+                  <li>Exhala y levanta las piernas hacia el techo.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Pilates/P_105-C2.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">7. Teaser</h5>
+                <ol>
+                  <li>Túmbate boca arriba juntando los muslos, con las rodillas flexionadas y los pies apoyados en el suelo. Apoya los brazos rectos a los lados del cuerpo, con las palmas hacia arriba.</li>
+                  <li>Levanta una pierna hacia el techo.</li>
+                  <li>Levanta los brazos hacia el techo.</li>
+                  <li>Enrolla el cuello y los hombros para levantarlos de la esterilla y eleva el torso hacia la pierna recta.</li>
+                  <li>Baja, vértebra a vértebra.</li>
+                  <li>Cambia de pierna.</li>
+                  <li>Túmbate boca arriba con las piernas levantadas 90 grados. Levanta los brazos hacia el techo.</li>
+                  <li>Lleva los brazos hacia los pies y rueda hasta apoyarte sobre el coxis.</li>
+                  <li>Baja y eleva las piernas.</li>
+                  <li>Baja articulando la columna vertebral, vértebra a vértebra. </li>
+                  <li>Baja articulando la columna vertebral, vértebra a vértebra.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Strength/S_019-B2.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">8. Plancha lateral</h5>
+                <ol>
+                  <li>Comienza en posición de plancha apoyado sobre las manos y los dedos de los pies.</li>
+                  <li>Apóyate sobre tu mano izquierda y gira el cuerpo hacia la derecha. Apoya los pies uno encima del otro.</li>
+                  <li>Impulsa la cadera hacia el techo mientras extiendes el brazo derecho hacia el techo.</li>
+                  <li>Vuelve a la posición de plancha y repite con el otro lado.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <video
+              class="card-img-top"
+              src="https://connectvideo.garmin.com/msn-workout/Strength/S_016-D2.mp4"
+              autoplay="true"
+              controls="true"
+            ></video>
+            <div class="card-body">
+              <h5 class="card-title">9. Plancha</h5>
+                <ol>
+                  <li>Túmbate en el suelo con los codos justo debajo de los hombros y las piernas totalmente extendidas. Levanta el tronco hasta formar una línea recta desde los hombros hasta los tobillos. Contrae el estómago y los glúteos y mantén esta posición durante el tiempo deseado.</li>
+                  <ul><strong style="color: rgb(237, 209, 160)">Sugerencias</strong>
+                    <li>Procura que no se curve la espalda.</li>
+                    <li>No permitas que las caderas se hundan o caigan.</li>
+                    <li>Aprieta los codos contra el suelo y contrae los glúteos para maximizar la estabilidad.</li>
+                  </ul>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="https://i.ytimg.com/vi/FWaMfMSJy3I/maxresdefault.jpg" alt="Espinales alternos">
+            <div class="card-body">
+              <h5 class="card-title">10. Espinales alternos.</h5>
+                <ol>
+                  <li>Túmbese bocabajo sobre la alfombrilla con los brazos estirados por encima de la cabeza.</li>
+                  <li>Levante el brazo izquierdo y la pierna derecha unos 15-20 cm del suelo.</li>
+                  <li>Mantenga la posición durante 2 segundos y descanse. </li>
+                  <li>Repita el movimiento con el brazo y la pierna contrarios.</li>
+                  <li>Repita el movimiento 5 veces con ambos lados.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
